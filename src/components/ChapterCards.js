@@ -22,7 +22,7 @@ const chapters = [
     lessons: 3,
     icon: '🌐',
     color: '#f093fb',
-    link: '/chapter-2/2-1-isaac-sim-intro',
+    link: '/chapter-2/2-1-gazebo-fundamentals',
     topics: ['Isaac Sim & Gazebo', 'Sim-to-Real Transfer', 'Robot Physics & Kinematics'],
   },
   {
@@ -33,7 +33,7 @@ const chapters = [
     lessons: 3,
     icon: '🧠',
     color: '#4facfe',
-    link: '/chapter-3/3-1-reinforcement-learning',
+    link: '/chapter-3/3-1-isaac-sim-basics',
     topics: ['Deep Reinforcement Learning', 'Sensor Fusion', 'Computer Vision with Isaac ROS'],
   },
   {

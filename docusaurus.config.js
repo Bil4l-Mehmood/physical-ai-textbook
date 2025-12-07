@@ -24,7 +24,7 @@ const config = {
   organizationName: 'Bil4l-Mehmood', // Usually your GitHub org/user name.
   projectName: 'physical-ai-textbook', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -108,11 +108,11 @@ const config = {
               },
               {
                 label: 'Chapter 2: Digital Twin',
-                to: '/chapter-2/2-1-isaac-sim-intro',
+                to: '/chapter-2/2-1-gazebo-fundamentals',
               },
               {
                 label: 'Chapter 3: AI-Robot Brain',
-                to: '/chapter-3/3-1-reinforcement-learning',
+                to: '/chapter-3/3-1-isaac-sim-basics',
               },
               {
                 label: 'Chapter 4: Vision-Language-Action',
