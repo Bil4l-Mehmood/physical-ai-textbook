@@ -46,13 +46,13 @@ export default function Hero() {
         <div className={styles.heroButtons}>
           <Link
             className={styles.primaryButton}
-            to="/chapter-1/1-1-foundations-pai">
+            to="/docs/chapter-1/1-1-foundations-pai">
             Start Learning
             <span className={styles.buttonIcon}>→</span>
           </Link>
           <Link
             className={styles.secondaryButton}
-            to="/getting-started">
+            to="/docs/getting-started">
             View Curriculum
             <span className={styles.buttonIcon}>📚</span>
           </Link>

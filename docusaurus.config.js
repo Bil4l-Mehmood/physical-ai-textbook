@@ -41,7 +41,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/docs',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
@@ -104,19 +104,19 @@ const config = {
             items: [
               {
                 label: 'Chapter 1: Robotic Nervous System',
-                to: '/chapter-1/1-1-foundations-pai',
+                to: '/docs/chapter-1/1-1-foundations-pai',
               },
               {
                 label: 'Chapter 2: Digital Twin',
-                to: '/chapter-2/2-1-gazebo-fundamentals',
+                to: '/docs/chapter-2/2-1-gazebo-fundamentals',
               },
               {
                 label: 'Chapter 3: AI-Robot Brain',
-                to: '/chapter-3/3-1-isaac-sim-basics',
+                to: '/docs/chapter-3/3-1-isaac-sim-basics',
               },
               {
                 label: 'Chapter 4: Vision-Language-Action',
-                to: '/chapter-4/4-1-llm-brain',
+                to: '/docs/chapter-4/4-1-llm-brain',
               },
             ],
           },

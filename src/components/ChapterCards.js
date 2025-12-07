@@ -11,7 +11,7 @@ const chapters = [
     lessons: 4,
     icon: '🧬',
     color: '#667eea',
-    link: '/chapter-1/1-1-foundations-pai',
+    link: '/docs/chapter-1/1-1-foundations-pai',
     topics: ['Physical AI Foundations', 'ROS 2 Core Concepts', 'Building rclpy Packages', 'URDF/XACRO'],
   },
   {
@@ -22,7 +22,7 @@ const chapters = [
     lessons: 3,
     icon: '🌐',
     color: '#f093fb',
-    link: '/chapter-2/2-1-gazebo-fundamentals',
+    link: '/docs/chapter-2/2-1-gazebo-fundamentals',
     topics: ['Isaac Sim & Gazebo', 'Sim-to-Real Transfer', 'Robot Physics & Kinematics'],
   },
   {
@@ -33,7 +33,7 @@ const chapters = [
     lessons: 3,
     icon: '🧠',
     color: '#4facfe',
-    link: '/chapter-3/3-1-isaac-sim-basics',
+    link: '/docs/chapter-3/3-1-isaac-sim-basics',
     topics: ['Deep Reinforcement Learning', 'Sensor Fusion', 'Computer Vision with Isaac ROS'],
   },
   {
@@ -44,7 +44,7 @@ const chapters = [
     lessons: 3,
     icon: '💬',
     color: '#43e97b',
-    link: '/chapter-4/4-1-llm-brain',
+    link: '/docs/chapter-4/4-1-llm-brain',
     topics: ['LLMs for Robotics', 'Conversational AI & VLA', 'HRI & Safety Frameworks'],
   },
 ];
