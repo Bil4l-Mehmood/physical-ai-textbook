@@ -1,0 +1,97 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a simple framework built on top of CSS
+ * Variables, it's used by Docusaurus, so we're assured that it'll load before
+ * anything else.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Add custom styles for Physical AI textbook */
+
+.lesson-overview {
+  background-color: #f0f7ff;
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 16px;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+[data-theme='dark'] .lesson-overview {
+  background-color: rgba(37, 194, 160, 0.1);
+}
+
+.hardware-required {
+  background-color: #fff3cd;
+  border: 1px solid #ffc107;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 12px 0;
+}
+
+[data-theme='dark'] .hardware-required {
+  background-color: rgba(255, 193, 7, 0.1);
+  border-color: #ffc107;
+}
+
+.code-example {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: #f5f5f5;
+}
+
+[data-theme='dark'] .code-example {
+  background-color: #2d2d2d;
+  border-color: #404040;
+}
+
+.expected-output {
+  background-color: #f8f9fa;
+  border-left: 3px solid #28a745;
+  padding: 12px;
+  margin: 12px 0;
+  font-family: monospace;
+  overflow-x: auto;
+}
+
+[data-theme='dark'] .expected-output {
+  background-color: #1a1a1a;
+  border-left-color: #28a745;
+}
+
+.key-takeaways {
+  background-color: #e8f5e9;
+  border-left: 4px solid #4caf50;
+  padding: 16px;
+  border-radius: 4px;
+  margin: 16px 0;
+}
+
+[data-theme='dark'] .key-takeaways {
+  background-color: rgba(76, 175, 80, 0.1);
+}

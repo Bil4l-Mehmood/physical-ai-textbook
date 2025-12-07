@@ -1,0 +1,8 @@
+{
+  "label": "Chapter 2: The Digital Twin",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Understand simulation-to-reality workflows using NVIDIA Isaac Sim. This chapter covers Weeks 6-7 of the course."
+  }
+}

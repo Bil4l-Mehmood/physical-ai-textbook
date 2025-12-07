@@ -1,0 +1,8 @@
+{
+  "label": "Chapter 3: The AI-Robot Brain",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Integrate perception and deep learning for autonomous robot behavior. This chapter covers Weeks 8-10 of the course."
+  }
+}

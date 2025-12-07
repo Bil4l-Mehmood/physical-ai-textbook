@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<!-- Copyright (c) 2025 Physical AI Course
+     License: MIT
+     Target: NVIDIA Jetson Orin Nano - ROS 2 Humble
+-->
+<robot name="simple_robot">
+  <!-- Base link (fixed to world) -->
+  <link name="base_link">
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0.05"/>
+      <geometry>
+        <box size="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="base_material">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05"/>
+      <geometry>
+        <box size="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Joint connecting base to first link -->
+  <joint name="joint_1" type="revolute">
+    <parent link="base_link"/>
+    <child link="link_1"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.5708" upper="1.5708" effort="10" velocity="1"/>
+    <dynamics damping="0.1" friction="0.0"/>
+  </joint>
+
+  <!-- First arm link -->
+  <link name="link_1">
+    <inertial>
+      <mass value="0.5"/>
+      <origin xyz="0 0 0.05"/>
+      <inertia ixx="0.005" ixy="0" ixz="0" iyy="0.005" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0.05"/>
+      <geometry>
+        <cylinder radius="0.02" length="0.1"/>
+      </geometry>
+      <material name="link_material">
+        <color rgba="0.2 0.2 0.8 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05"/>
+      <geometry>
+        <cylinder radius="0.02" length="0.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Joint connecting first to second link -->
+  <joint name="joint_2" type="revolute">
+    <parent link="link_1"/>
+    <child link="link_2"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.5708" upper="1.5708" effort="10" velocity="1"/>
+    <dynamics damping="0.1" friction="0.0"/>
+  </joint>
+
+  <!-- Second arm link (end effector) -->
+  <link name="link_2">
+    <inertial>
+      <mass value="0.3"/>
+      <origin xyz="0 0 0.05"/>
+      <inertia ixx="0.003" ixy="0" ixz="0" iyy="0.003" iyz="0" izz="0.0005"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0.05"/>
+      <geometry>
+        <cylinder radius="0.015" length="0.1"/>
+      </geometry>
+      <material name="endeffector_material">
+        <color rgba="0.8 0.2 0.2 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05"/>
+      <geometry>
+        <cylinder radius="0.015" length="0.1"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>
