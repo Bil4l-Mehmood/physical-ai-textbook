@@ -14,14 +14,14 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-physical-ai-textbook.com',
+  url: 'https://Bil4l-Mehmood.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/physical-ai-textbook/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'physical-ai-course', // Usually your GitHub org/user name.
+  organizationName: 'Bil4l-Mehmood', // Usually your GitHub org/user name.
   projectName: 'physical-ai-textbook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -45,7 +45,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/physical-ai-course/physical-ai-textbook/edit/main/',
+            'https://github.com/Bil4l-Mehmood/physical-ai-textbook/edit/main/',
           lastVersion: 'current',
           versions: {
             current: {
@@ -90,7 +90,7 @@ const config = {
             label: 'Chapters',
           },
           {
-            href: 'https://github.com/physical-ai-course/physical-ai-textbook',
+            href: 'https://github.com/Bil4l-Mehmood/physical-ai-textbook',
             label: 'GitHub',
             position: 'right',
           },
@@ -142,11 +142,11 @@ const config = {
             items: [
               {
                 label: 'GitHub Issues',
-                href: 'https://github.com/physical-ai-course/physical-ai-textbook/issues',
+                href: 'https://github.com/Bil4l-Mehmood/physical-ai-textbook/issues',
               },
               {
                 label: 'Discussions',
-                href: 'https://github.com/physical-ai-course/physical-ai-textbook/discussions',
+                href: 'https://github.com/Bil4l-Mehmood/physical-ai-textbook/discussions',
               },
             ],
           },
