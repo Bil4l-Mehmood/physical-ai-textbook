@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="mdx-wrapper mdx-page plugin-pages plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Physical AI &amp; Humanoid Robotics Textbook</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://Bil4l-Mehmood.github.io/physical-ai-textbook/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://Bil4l-Mehmood.github.io/physical-ai-textbook/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://Bil4l-Mehmood.github.io/physical-ai-textbook/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="robotics, ROS2, physical AI, Jetson Orin Nano, humanoid, machine learning"><meta data-rh="true" property="og:title" content="Physical AI &amp; Humanoid Robotics Textbook"><meta data-rh="true" name="description" content="A comprehensive AI-Native course for building intelligent robots with NVIDIA Jetson Orin Nano"><meta data-rh="true" property="og:description" content="A comprehensive AI-Native course for building intelligent robots with NVIDIA Jetson Orin Nano"><link data-rh="true" rel="icon" href="/physical-ai-textbook/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://Bil4l-Mehmood.github.io/physical-ai-textbook/"><link data-rh="true" rel="alternate" href="https://Bil4l-Mehmood.github.io/physical-ai-textbook/" hreflang="en"><link data-rh="true" rel="alternate" href="https://Bil4l-Mehmood.github.io/physical-ai-textbook/" hreflang="x-default"><script data-rh="true">function insertBanner(){var n=document.createElement("div");n.id="__docusaurus-base-url-issue-banner-container";n.innerHTML='\n<div id="__docusaurus-base-url-issue-banner" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">\n   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>\n   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>\n   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">/physical-ai-textbook/</span> </p>\n   <p>We suggest trying baseUrl = <span id="__docusaurus-base-url-issue-banner-suggestion-container" style="font-weight: bold; color: green;"></span></p>\n</div>\n',document.body.prepend(n);var e=document.getElementById("__docusaurus-base-url-issue-banner-suggestion-container"),s=window.location.pathname,o="/"===s.substr(-1)?s:s+"/";e.innerHTML=o}document.addEventListener("DOMContentLoaded",function(){void 0===window.docusaurus&&insertBanner()})</script><link rel="stylesheet" href="/physical-ai-textbook/assets/css/styles.d2297dad.css">
+<script src="/physical-ai-textbook/assets/js/runtime~main.ee96a4a3.js" defer="defer"></script>
+<script src="/physical-ai-textbook/assets/js/main.db2ad434.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_gu5v" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/physical-ai-textbook/"><div class="navbar__logo"><img src="/physical-ai-textbook/img/logo.svg" alt="Physical AI Logo" class="themedComponent_ZRzL themedComponent--light_dGsa"><img src="/physical-ai-textbook/img/logo.svg" alt="Physical AI Logo" class="themedComponent_ZRzL themedComponent--dark_pzCA"></div><b class="navbar__title text--truncate">Physical AI Textbook</b></a><a class="navbar__item navbar__link" href="/physical-ai-textbook/docs/">Chapters</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/Bil4l-Mehmood/physical-ai-textbook" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_T11m"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_kWbt colorModeToggle_GwZs"><button class="clean-btn toggleButton_fOL9 toggleButtonDisabled_STpu" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_YpC3 lightToggleIcon_DCeJ"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_YpC3 darkToggleIcon_DFgp"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_YpC3 systemToggleIcon_F0ff"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_IP3a"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_IbdI"><main class="container container--fluid margin-vert--lg"><div class="row mdxPageWrapper_TZLa"><div class="col"><article><div class="heroContainer_dpDp"><div class="heroBackground_Uhyz"><div class="gradientOrb1_o7Xd"></div><div class="gradientOrb2_OHlu"></div><div class="gradientOrb3_MZNJ"></div></div><div class="heroContent_t7Qk"><div class="badge_BWxR"><span class="badgeIcon_cFt2">🤖</span>PANAVERSITY AI-NATIVE BOOK SERIES</div><h1 class="heroTitle_SpsI">Physical AI &amp; Humanoid<br><span class="gradient_ZLkd">Robotics Textbook</span></h1><p class="heroSubtitle_JE8D">Master the future of robotics with hands-on Physical AI training. Build intelligent robots using NVIDIA Jetson Orin Nano, ROS 2, and cutting-edge AI.</p><div class="heroFeatures_pR6z"><div class="featureItem__4kh"><span class="featureIcon_fpVO">✨</span><span>13-Week Curriculum</span></div><div class="featureItem__4kh"><span class="featureIcon_fpVO">🎯</span><span>Hands-On Projects</span></div><div class="featureItem__4kh"><span class="featureIcon_fpVO">🚀</span><span>Industry-Ready Skills</span></div></div><div class="heroButtons_DYMb"><a class="primaryButton_ssZX" href="/physical-ai-textbook/docs/chapter-1/1-1-foundations-pai">Start Learning<span class="buttonIcon_F4en">→</span></a><a class="secondaryButton_Uj4L" href="/physical-ai-textbook/docs/getting-started">View Curriculum<span class="buttonIcon_F4en">📚</span></a></div><div class="heroStats_bDsi"><div class="statItem_N7Ir"><div class="statNumber_t6RA">4</div><div class="statLabel_kY6l">Chapters</div></div><div class="statDivider_Wt5P"></div><div class="statItem_N7Ir"><div class="statNumber_t6RA">13</div><div class="statLabel_kY6l">Lessons</div></div><div class="statDivider_Wt5P"></div><div class="statItem_N7Ir"><div class="statNumber_t6RA">13</div><div class="statLabel_kY6l">Weeks</div></div><div class="statDivider_Wt5P"></div><div class="statItem_N7Ir"><div class="statNumber_t6RA">100+</div><div class="statLabel_kY6l">Code Examples</div></div></div></div></div>
+<div class="featuresSection_O6B8"><div class="sectionHeader_VUN8"><h2 class="sectionTitle_QSDK">Why This Textbook?</h2><p class="sectionSubtitle_W9Aq">A comprehensive, hands-on approach to mastering Physical AI and Humanoid Robotics</p></div><div class="featuresGrid_mqqp"><div class="featureCard_AeTz" style="animation-delay:0s"><div class="featureIcon_GLOU" style="background:linear-gradient(135deg, #667eea 0%, #764ba2 100%)">🧠</div><h3 class="featureTitle_CZmU">AI-Powered Learning</h3><p class="featureDescription_mVLG">Master reinforcement learning, computer vision, and LLMs for robotics applications.</p></div><div class="featureCard_AeTz" style="animation-delay:0.1s"><div class="featureIcon_GLOU" style="background:linear-gradient(135deg, #f093fb 0%, #f5576c 100%)">🤖</div><h3 class="featureTitle_CZmU">Hands-On Hardware</h3><p class="featureDescription_mVLG">Work directly with NVIDIA Jetson Orin Nano, RealSense cameras, and robotic platforms.</p></div><div class="featureCard_AeTz" style="animation-delay:0.2s"><div class="featureIcon_GLOU" style="background:linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)">🎮</div><h3 class="featureTitle_CZmU">Simulation First</h3><p class="featureDescription_mVLG">Learn sim-to-real workflows using NVIDIA Isaac Sim before deploying to hardware.</p></div><div class="featureCard_AeTz" style="animation-delay:0.30000000000000004s"><div class="featureIcon_GLOU" style="background:linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)">⚡</div><h3 class="featureTitle_CZmU">ROS 2 Ecosystem</h3><p class="featureDescription_mVLG">Build production-ready robots using industry-standard ROS 2 middleware and tools.</p></div><div class="featureCard_AeTz" style="animation-delay:0.4s"><div class="featureIcon_GLOU" style="background:linear-gradient(135deg, #fa709a 0%, #fee140 100%)">🎯</div><h3 class="featureTitle_CZmU">Project-Based</h3><p class="featureDescription_mVLG">Complete real-world projects from autonomous navigation to human-robot interaction.</p></div><div class="featureCard_AeTz" style="animation-delay:0.5s"><div class="featureIcon_GLOU" style="background:linear-gradient(135deg, #30cfd0 0%, #330867 100%)">📚</div><h3 class="featureTitle_CZmU">Comprehensive</h3><p class="featureDescription_mVLG">From basics to advanced topics - everything you need in one complete curriculum.</p></div></div></div>
+<div class="chaptersSection_f4p8"><div class="chapterBackground_MYi9"><div class="gradientOrb1Chapter_hh3U"></div><div class="gradientOrb2Chapter_VV32"></div><div class="gradientOrb3Chapter_wRZw"></div></div><div class="sectionHeader_bww0"><h2 class="sectionTitle_gqKI">Learning Roadmap</h2><p class="sectionSubtitle_lPho">Four comprehensive chapters taking you from basics to advanced Physical AI</p></div><div class="chaptersGrid_Qmrs"><a class="chapterCard_BNBR" style="animation-delay:0s" href="/physical-ai-textbook/docs/chapter-1/1-1-foundations-pai"><div class="cardHeader_P3QG"><div class="chapterIcon_NGTw" style="background:#667eea">🧬</div><div class="chapterMeta_QwCc"><div class="chapterNumber_HoVG">Chapter <!-- -->01</div><div class="chapterDuration_iJ0U">Weeks 1-5</div></div></div><h3 class="chapterTitle_QsJX">The Robotic Nervous System</h3><p class="chapterDescription_NtRn">Learn the foundations of Physical AI and how robots communicate using ROS 2 middleware.</p><div class="topicsList_RJkj"><div class="topicItem_ft82"><span class="topicBullet_wxcc">•</span>Physical AI Foundations</div><div class="topicItem_ft82"><span class="topicBullet_wxcc">•</span>ROS 2 Core Concepts</div><div class="topicItem_ft82"><span class="topicBullet_wxcc">•</span>Building rclpy Packages</div><div class="topicItem_ft82"><span class="topicBullet_wxcc">•</span>URDF/XACRO</div></div><div class="cardFooter_YavD"><div class="lessonCount_xoqu"><span class="lessonIcon_pVPu">📖</span>4<!-- --> Lessons</div><div class="arrowIcon_CDud">→</div></div></a><a class="chapterCard_BNBR" style="animation-delay:0.15s" href="/physical-ai-textbook/docs/chapter-2/2-1-gazebo-fundamentals"><div class="cardHeader_P3QG"><div class="chapterIcon_NGTw" style="background:#f093fb">🌐</div><div class="chapterMeta_QwCc"><div class="chapterNumber_HoVG">Chapter <!-- -->02</div><div class="chapterDuration_iJ0U">Weeks 6-7</div></div></div><h3 class="chapterTitle_QsJX">The Digital Twin</h3><p class="chapterDescription_NtRn">Understand simulation-to-reality workflows using NVIDIA Isaac Sim.</p><div class="topicsList_RJkj"><div class="topicItem_ft82"><span class="topicBullet_wxcc">•</span>Isaac Sim &amp; Gazebo</div><div class="topicItem_ft82"><span class="topicBullet_wxcc">•</span>Sim-to-Real Transfer</div><div class="topicItem_ft82"><span class="topicBullet_wxcc">•</span>Robot Physics &amp; Kinematics</div></div><div class="cardFooter_YavD"><div class="lessonCount_xoqu"><span class="lessonIcon_pVPu">📖</span>3<!-- --> Lessons</div><div class="arrowIcon_CDud">→</div></div></a><a class="chapterCard_BNBR" style="animation-delay:0.3s" href="/physical-ai-textbook/docs/chapter-3/3-1-isaac-sim-basics"><div class="cardHeader_P3QG"><div class="chapterIcon_NGTw" style="background:#4facfe">🧠</div><div class="chapterMeta_QwCc"><div class="chapterNumber_HoVG">Chapter <!-- -->03</div><div class="chapterDuration_iJ0U">Weeks 8-10</div></div></div><h3 class="chapterTitle_QsJX">The AI-Robot Brain</h3><p class="chapterDescription_NtRn">Integrate perception and deep learning for autonomous robot behavior.</p><div class="topicsList_RJkj"><div class="topicItem_ft82"><span class="topicBullet_wxcc">•</span>Deep Reinforcement Learning</div><div class="topicItem_ft82"><span class="topicBullet_wxcc">•</span>Sensor Fusion</div><div class="topicItem_ft82"><span class="topicBullet_wxcc">•</span>Computer Vision with Isaac ROS</div></div><div class="cardFooter_YavD"><div class="lessonCount_xoqu"><span class="lessonIcon_pVPu">📖</span>3<!-- --> Lessons</div><div class="arrowIcon_CDud">→</div></div></a><a class="chapterCard_BNBR" style="animation-delay:0.44999999999999996s" href="/physical-ai-textbook/docs/chapter-4/4-1-llm-brain"><div class="cardHeader_P3QG"><div class="chapterIcon_NGTw" style="background:#43e97b">💬</div><div class="chapterMeta_QwCc"><div class="chapterNumber_HoVG">Chapter <!-- -->04</div><div class="chapterDuration_iJ0U">Weeks 11-13</div></div></div><h3 class="chapterTitle_QsJX">Vision-Language-Action</h3><p class="chapterDescription_NtRn">Build intelligent robot systems that understand and respond to natural language.</p><div class="topicsList_RJkj"><div class="topicItem_ft82"><span class="topicBullet_wxcc">•</span>LLMs for Robotics</div><div class="topicItem_ft82"><span class="topicBullet_wxcc">•</span>Conversational AI &amp; VLA</div><div class="topicItem_ft82"><span class="topicBullet_wxcc">•</span>HRI &amp; Safety Frameworks</div></div><div class="cardFooter_YavD"><div class="lessonCount_xoqu"><span class="lessonIcon_pVPu">📖</span>3<!-- --> Lessons</div><div class="arrowIcon_CDud">→</div></div></a></div></div>
+<div class="showcaseSection_YEjF"><div class="sectionHeader_wdeM"><h2 class="sectionTitle_qLSi">Hardware &amp; Software Stack</h2><p class="sectionSubtitle_AwEY">Industry-standard tools and cutting-edge hardware for real-world robotics development</p></div><div class="hardwareGrid_K3i8"><div class="hardwareCard__2nh" style="animation-delay:0s"><div class="hardwareIcon_ANfM" style="background:#76b900">💻</div><div class="hardwareInfo_RedO"><div class="category_IGxb">Compute Platform</div><h3 class="hardwareName_dL2l">NVIDIA Jetson Orin Nano</h3><div class="specsList_xHjn"><div class="specItem_rH0w"><span class="checkmark_JK_T">✓</span>8GB RAM</div><div class="specItem_rH0w"><span class="checkmark_JK_T">✓</span>1024-core GPU</div><div class="specItem_rH0w"><span class="checkmark_JK_T">✓</span>AI Performance: 40 TOPS</div></div></div></div><div class="hardwareCard__2nh" style="animation-delay:0.1s"><div class="hardwareIcon_ANfM" style="background:#0071c5">📷</div><div class="hardwareInfo_RedO"><div class="category_IGxb">Depth Camera</div><h3 class="hardwareName_dL2l">Intel RealSense D435i</h3><div class="specsList_xHjn"><div class="specItem_rH0w"><span class="checkmark_JK_T">✓</span>Depth + RGB</div><div class="specItem_rH0w"><span class="checkmark_JK_T">✓</span>IMU Sensor</div><div class="specItem_rH0w"><span class="checkmark_JK_T">✓</span>Up to 90 FPS</div></div></div></div><div class="hardwareCard__2nh" style="animation-delay:0.2s"><div class="hardwareIcon_ANfM" style="background:#e74c3c">🎙️</div><div class="hardwareInfo_RedO"><div class="category_IGxb">Audio Input</div><h3 class="hardwareName_dL2l">ReSpeaker Mic Array</h3><div class="specsList_xHjn"><div class="specItem_rH0w"><span class="checkmark_JK_T">✓</span>4-Mic Array</div><div class="specItem_rH0w"><span class="checkmark_JK_T">✓</span>Voice Recognition</div><div class="specItem_rH0w"><span class="checkmark_JK_T">✓</span>USB 2.0</div></div></div></div><div class="hardwareCard__2nh" style="animation-delay:0.30000000000000004s"><div class="hardwareIcon_ANfM" style="background:#9b59b6">🌐</div><div class="hardwareInfo_RedO"><div class="category_IGxb">Simulation</div><h3 class="hardwareName_dL2l">NVIDIA Isaac Sim</h3><div class="specsList_xHjn"><div class="specItem_rH0w"><span class="checkmark_JK_T">✓</span>PhotoRealistic</div><div class="specItem_rH0w"><span class="checkmark_JK_T">✓</span>Physics Engine</div><div class="specItem_rH0w"><span class="checkmark_JK_T">✓</span>ROS 2 Integration</div></div></div></div></div><div class="softwareSection_aLJC"><h3 class="softwareTitle_TDHg">Software &amp; Frameworks</h3><div class="softwareGrid_bFNN"><div class="softwareTag_loXZ" style="animation-delay:0s"><span class="softwareIcon_RDLs">🤖</span><span class="softwareName_AR15">ROS 2 Humble</span></div><div class="softwareTag_loXZ" style="animation-delay:0.05s"><span class="softwareIcon_RDLs">🐍</span><span class="softwareName_AR15">Python 3.10+</span></div><div class="softwareTag_loXZ" style="animation-delay:0.1s"><span class="softwareIcon_RDLs">🐧</span><span class="softwareName_AR15">Ubuntu 22.04</span></div><div class="softwareTag_loXZ" style="animation-delay:0.15000000000000002s"><span class="softwareIcon_RDLs">🔥</span><span class="softwareName_AR15">PyTorch</span></div><div class="softwareTag_loXZ" style="animation-delay:0.2s"><span class="softwareIcon_RDLs">👁️</span><span class="softwareName_AR15">OpenCV</span></div><div class="softwareTag_loXZ" style="animation-delay:0.25s"><span class="softwareIcon_RDLs">⚡</span><span class="softwareName_AR15">CUDA</span></div></div></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_x4mB" id="what-youll-build">What You&#x27;ll Build<a href="#what-youll-build" class="hash-link" aria-label="Direct link to What You&#x27;ll Build" title="Direct link to What You&#x27;ll Build" translate="no">​</a></h2>
+<p>Throughout this textbook, you&#x27;ll create real-world robotics projects:</p>
+<div class="projects-grid"><div class="project-item"><div class="project-icon">🤖</div><h3>Autonomous Navigation</h3><p>Build robots that can navigate complex environments using SLAM and path planning</p></div><div class="project-item"><div class="project-icon">🎯</div><h3>Object Manipulation</h3><p>Train robotic arms to pick and place objects using deep reinforcement learning</p></div><div class="project-item"><div class="project-icon">👁️</div><h3>Visual Recognition</h3><p>Implement real-time object detection and tracking with Isaac ROS</p></div><div class="project-item"><div class="project-icon">💬</div><h3>Voice Interaction</h3><p>Create conversational robots using LLMs and natural language processing</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_x4mB" id="learning-outcomes">Learning Outcomes<a href="#learning-outcomes" class="hash-link" aria-label="Direct link to Learning Outcomes" title="Direct link to Learning Outcomes" translate="no">​</a></h2>
+<p>By completing this textbook, you will be able to:</p>
+<div class="outcomes-list"><div class="outcome-item"><span class="outcome-number">01</span><div class="outcome-content"><h4>Master ROS 2 Fundamentals</h4><p>Build production-ready robotic systems using industry-standard middleware and tools</p></div></div><div class="outcome-item"><span class="outcome-number">02</span><div class="outcome-content"><h4>Implement AI Algorithms</h4><p>Deploy deep learning models for perception, decision-making, and control on edge devices</p></div></div><div class="outcome-item"><span class="outcome-number">03</span><div class="outcome-content"><h4>Simulation to Reality</h4><p>Develop and test robots in simulation before deploying to physical hardware</p></div></div><div class="outcome-item"><span class="outcome-number">04</span><div class="outcome-content"><h4>Build Humanoid Robots</h4><p>Create intelligent robots capable of natural interaction with humans and environments</p></div></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_x4mB" id="ready-to-start-your-journey">Ready to Start Your Journey?<a href="#ready-to-start-your-journey" class="hash-link" aria-label="Direct link to Ready to Start Your Journey?" title="Direct link to Ready to Start Your Journey?" translate="no">​</a></h2>
+<div style="text-align:center;margin:3rem 0"><a href="/docs/chapter-1/1-1-foundations-pai" class="cta-button"><p>Begin Chapter 1: Robotic Nervous System →</p></a></div>
+<div class="support-section"><h3>Need Help?</h3><div class="support-links"><a href="/docs/hardware-setup" class="support-link"><span class="support-icon">🔧</span><span>Hardware Setup Guide</span></a><a href="/docs/getting-started" class="support-link"><span class="support-icon">🚀</span><span>Getting Started</span></a><a href="https://github.com/Bil4l-Mehmood/physical-ai-textbook/discussions" class="support-link"><span class="support-icon">💬</span><span>Community Discussions</span></a><a href="/docs/faq" class="support-link"><span class="support-icon">❓</span><span>FAQ</span></a></div></div>
+<style>
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.project-item {
+  padding: 2rem;
+  background: rgba(102, 126, 234, 0.05);
+  border-radius: 16px;
+  border: 1px solid rgba(102, 126, 234, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.project-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #667eea;
+}
+
+.project-item p {
+  margin: 0;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.outcomes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.outcome-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.outcome-item:hover {
+  transform: translateX(10px);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.outcome-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #667eea;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 12px;
+}
+
+.outcome-content h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.outcome-content p {
+  margin: 0;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1.25rem 2.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white !important;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+}
+
+.support-section {
+  margin: 4rem 0;
+  padding: 3rem;
+  background: rgba(102, 126, 234, 0.05);
+  border-radius: 24px;
+  border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.support-section h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.support-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.support-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+[data-theme=&#x27;dark&#x27;] .support-link {
+  background: rgba(30, 30, 30, 0.8);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.support-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-color: #667eea;
+  color: inherit;
+}
+
+.support-icon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .outcome-item {
+    flex-direction: column;
+  }
+
+  .support-links {
+    grid-template-columns: 1fr;
+  }
+}
+</style></article></div></div></main></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Chapters</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/physical-ai-textbook/docs/chapter-1/1-1-foundations-pai">Chapter 1: Robotic Nervous System</a></li><li class="footer__item"><a class="footer__link-item" href="/physical-ai-textbook/docs/chapter-2/2-1-gazebo-fundamentals">Chapter 2: Digital Twin</a></li><li class="footer__item"><a class="footer__link-item" href="/physical-ai-textbook/docs/chapter-3/3-1-isaac-sim-basics">Chapter 3: AI-Robot Brain</a></li><li class="footer__item"><a class="footer__link-item" href="/physical-ai-textbook/docs/chapter-4/4-1-llm-brain">Chapter 4: Vision-Language-Action</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Resources</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://docs.ros.org/en/humble/" target="_blank" rel="noopener noreferrer" class="footer__link-item">ROS 2 Documentation<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_T11m"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://developer.nvidia.com/isaac-sim" target="_blank" rel="noopener noreferrer" class="footer__link-item">NVIDIA Isaac Sim<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_T11m"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Jetson Orin Nano<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_T11m"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Bil4l-Mehmood/physical-ai-textbook/issues" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub Issues<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_T11m"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/Bil4l-Mehmood/physical-ai-textbook/discussions" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discussions<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_T11m"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Physical AI Course. Built with Docusaurus 2.4.3.</div></div></div></footer></div>
+</body>
+</html>
