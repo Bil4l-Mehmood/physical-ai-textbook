@@ -1,0 +1,166 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  backdrop-filter: blur(5px);
+}
+
+.modalContent {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html[data-theme='dark'] .modalContent {
+  background: #1e1e1e;
+  color: #e2e8f0;
+}
+
+.closeButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.closeButton:hover {
+  background: #f0f0f0;
+  color: #000;
+}
+
+html[data-theme='dark'] .closeButton:hover {
+  background: #333;
+  color: #fff;
+}
+
+.modalContent h2 {
+  margin: 0 0 10px 0;
+  color: #667eea;
+  font-size: 24px;
+}
+
+.modalContent > p {
+  margin: 0 0 25px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+html[data-theme='dark'] .modalContent > p {
+  color: #a0aec0;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #2d3748;
+}
+
+html[data-theme='dark'] .formGroup label {
+  color: #e2e8f0;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  background: white;
+  color: #2d3748;
+}
+
+html[data-theme='dark'] .formGroup input,
+html[data-theme='dark'] .formGroup select,
+html[data-theme='dark'] .formGroup textarea {
+  background: #2a2a2a;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 10px;
+}
+
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.submitButton:active {
+  transform: translateY(0);
+}
+
+.privacyNote {
+  text-align: center;
+  font-size: 12px;
+  color: #718096;
+  margin-top: 15px;
+}
+
+html[data-theme='dark'] .privacyNote {
+  color: #a0aec0;
+}

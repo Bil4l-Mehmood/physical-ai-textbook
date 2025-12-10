@@ -17,7 +17,7 @@ const config = {
   url: 'https://physical-ai-textbook.vercel.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For Vercel deployment, use root
-  baseUrl: '/physical-ai-textbook/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

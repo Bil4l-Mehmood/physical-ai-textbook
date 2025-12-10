@@ -1,0 +1,86 @@
+.authButtons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.signInBtn {
+  padding: 6px 16px;
+  background: transparent;
+  border: 1px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.signInBtn:hover {
+  background: var(--ifm-color-primary);
+  color: white;
+}
+
+.signUpBtn {
+  padding: 6px 16px;
+  background: var(--ifm-color-primary);
+  border: 1px solid var(--ifm-color-primary);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.signUpBtn:hover {
+  background: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.userContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 12px;
+}
+
+.userName {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ifm-font-color-base);
+}
+
+.logoutBtn {
+  padding: 6px 14px;
+  background: transparent;
+  border: 1px solid var(--ifm-color-danger);
+  color: var(--ifm-color-danger);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.logoutBtn:hover {
+  background: var(--ifm-color-danger);
+  color: white;
+}
+
+@media (max-width: 996px) {
+  .authButtons {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .userContainer {
+    margin-left: 0;
+    margin-top: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

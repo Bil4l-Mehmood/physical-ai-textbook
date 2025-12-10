@@ -1,0 +1,65 @@
+.personalizeContainer {
+  margin: 30px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+}
+
+html[data-theme='dark'] .personalizeContainer {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  border-left-color: #764ba2;
+}
+
+.personalizeButton {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+}
+
+.personalizeButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.personalizeButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.personalizedContent {
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme='dark'] .personalizedContent {
+  background: #2a2a2a;
+}
+
+.personalizedContent h3 {
+  margin-top: 0;
+  color: #667eea;
+  font-size: 20px;
+}
+
+.content {
+  line-height: 1.8;
+  color: #2d3748;
+  white-space: pre-wrap;
+}
+
+html[data-theme='dark'] .content {
+  color: #e2e8f0;
+}

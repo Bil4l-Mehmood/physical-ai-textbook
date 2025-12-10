@@ -9,6 +9,7 @@ import FeatureCards from '@site/src/components/FeatureCards';
 import ChapterCards from '@site/src/components/ChapterCards';
 import HardwareShowcase from '@site/src/components/HardwareShowcase';
 import SignupButton from '@site/src/components/Auth/SignupButton';
+import ProtectedLink from '@site/src/components/Auth/ProtectedLink';
 import PersonalizeButton from '@site/src/components/PersonalizeButton';
 import TranslateButton from '@site/src/components/TranslateButton';
 
@@ -183,9 +184,9 @@ By completing this textbook, you will be able to:
 ## Ready to Start Your Journey?
 
 <div style={{ textAlign: 'center', margin: '3rem 0' }}>
-  <a href="/docs/chapter-1/1-1-foundations-pai" className="cta-button">
+  <ProtectedLink to="/docs/chapter-1/1-1-foundations-pai" className="cta-button">
     Begin Chapter 1: Robotic Nervous System →
-  </a>
+  </ProtectedLink>
 </div>
 
 <div className="support-section">

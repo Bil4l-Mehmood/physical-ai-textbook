@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
+import ProtectedLink from './Auth/ProtectedLink';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -44,18 +45,18 @@ export default function Hero() {
         </div>
 
         <div className={styles.heroButtons}>
-          <Link
+          <ProtectedLink
             className={styles.primaryButton}
             to="/docs/chapter-1/1-1-foundations-pai">
             Start Learning
             <span className={styles.buttonIcon}>→</span>
-          </Link>
-          <Link
+          </ProtectedLink>
+          <ProtectedLink
             className={styles.secondaryButton}
             to="/docs/getting-started">
             View Curriculum
             <span className={styles.buttonIcon}>📚</span>
-          </Link>
+          </ProtectedLink>
         </div>
 
         <div className={styles.heroStats}>

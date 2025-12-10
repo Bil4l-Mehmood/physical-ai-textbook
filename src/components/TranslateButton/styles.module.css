@@ -1,0 +1,112 @@
+.translateContainer {
+  margin: 30px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%);
+  border-radius: 12px;
+  border-left: 4px solid #00897b;
+}
+
+html[data-theme='dark'] .translateContainer {
+  background: linear-gradient(135deg, #263238 0%, #1a237e 100%);
+  border-left-color: #4db6ac;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.translateButton {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #00897b 0%, #004d40 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.translateButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 137, 123, 0.4);
+}
+
+.translateButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.toggleButton {
+  padding: 12px 20px;
+  background: white;
+  color: #00897b;
+  border: 2px solid #00897b;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+html[data-theme='dark'] .toggleButton {
+  background: #1a237e;
+  color: #4db6ac;
+  border-color: #4db6ac;
+}
+
+.toggleButton:hover {
+  background: #00897b;
+  color: white;
+}
+
+.urduContent {
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: right;
+}
+
+html[data-theme='dark'] .urduContent {
+  background: #2a2a2a;
+}
+
+.urduContent h3 {
+  margin-top: 0;
+  color: #00897b;
+  font-size: 24px;
+}
+
+html[data-theme='dark'] .urduContent h3 {
+  color: #4db6ac;
+}
+
+.content {
+  line-height: 2;
+  font-size: 18px;
+  color: #2d3748;
+  white-space: pre-wrap;
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+}
+
+html[data-theme='dark'] .content {
+  color: #e2e8f0;
+}
+
+.note {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e2e8f0;
+  font-size: 14px;
+  color: #718096;
+  font-style: italic;
+}
+
+html[data-theme='dark'] .note {
+  border-top-color: #4a5568;
+  color: #a0aec0;
+}
