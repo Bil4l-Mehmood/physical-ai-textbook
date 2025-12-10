@@ -8,8 +8,97 @@ import Hero from '@site/src/components/Hero';
 import FeatureCards from '@site/src/components/FeatureCards';
 import ChapterCards from '@site/src/components/ChapterCards';
 import HardwareShowcase from '@site/src/components/HardwareShowcase';
+import SignupButton from '@site/src/components/Auth/SignupButton';
+import PersonalizeButton from '@site/src/components/PersonalizeButton';
+import TranslateButton from '@site/src/components/TranslateButton';
 
 <Hero />
+
+<div style={{
+  background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%)',
+  borderBottom: '2px solid rgba(102, 126, 234, 0.2)',
+  padding: '40px 20px',
+  marginBottom: '60px'
+}}>
+  <div style={{maxWidth: '1200px', margin: '0 auto', textAlign: 'center'}}>
+    <div style={{marginBottom: '30px'}}>
+      <span style={{
+        display: 'inline-block',
+        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        color: 'white',
+        padding: '8px 20px',
+        borderRadius: '20px',
+        fontSize: '14px',
+        fontWeight: '700',
+        textTransform: 'uppercase',
+        letterSpacing: '1px',
+        marginBottom: '20px'
+      }}>
+        ✨ Bonus Features Unlocked
+      </span>
+      <h2 style={{fontSize: '2rem', fontWeight: '800', margin: '15px 0 10px 0', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>
+        Personalized AI-Powered Learning
+      </h2>
+      <p style={{fontSize: '1.1rem', opacity: '0.8', maxWidth: '700px', margin: '0 auto'}}>
+        Sign up to unlock personalized content, Urdu translation, and AI chatbot assistance
+      </p>
+    </div>
+
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+      gap: '20px',
+      maxWidth: '1000px',
+      margin: '0 auto'
+    }}>
+      <div style={{
+        background: 'rgba(255, 255, 255, 0.9)',
+        padding: '25px',
+        borderRadius: '16px',
+        boxShadow: '0 8px 30px rgba(102, 126, 234, 0.15)',
+        border: '1px solid rgba(102, 126, 234, 0.2)',
+        transition: 'transform 0.3s ease'
+      }}>
+        <div style={{fontSize: '2.5rem', marginBottom: '10px'}}>👤</div>
+        <h3 style={{fontSize: '1.1rem', fontWeight: '700', marginBottom: '15px', color: '#667eea'}}>Sign Up / Login</h3>
+        <SignupButton />
+      </div>
+
+      <div style={{
+        background: 'rgba(255, 255, 255, 0.9)',
+        padding: '25px',
+        borderRadius: '16px',
+        boxShadow: '0 8px 30px rgba(102, 126, 234, 0.15)',
+        border: '1px solid rgba(102, 126, 234, 0.2)',
+        transition: 'transform 0.3s ease'
+      }}>
+        <div style={{fontSize: '2.5rem', marginBottom: '10px'}}>🎯</div>
+        <h3 style={{fontSize: '1.1rem', fontWeight: '700', marginBottom: '15px', color: '#667eea'}}>Personalized Learning</h3>
+        <PersonalizeButton chapterTitle="Physical AI & Humanoid Robotics Course" />
+      </div>
+
+      <div style={{
+        background: 'rgba(255, 255, 255, 0.9)',
+        padding: '25px',
+        borderRadius: '16px',
+        boxShadow: '0 8px 30px rgba(102, 126, 234, 0.15)',
+        border: '1px solid rgba(102, 126, 234, 0.2)',
+        transition: 'transform 0.3s ease'
+      }}>
+        <div style={{fontSize: '2.5rem', marginBottom: '10px'}}>🌐</div>
+        <h3 style={{fontSize: '1.1rem', fontWeight: '700', marginBottom: '15px', color: '#667eea'}}>اردو Translation</h3>
+        <TranslateButton
+          chapterTitle="Physical AI & Humanoid Robotics Textbook"
+          content="This is a comprehensive, production-ready textbook for learning Physical AI and Humanoid Robotics on the NVIDIA Jetson Orin Nano. The course is designed for hands-on learning with ROS 2 middleware, NVIDIA Isaac Sim for simulation, and cutting-edge AI techniques including reinforcement learning and large language models. The textbook covers 4 chapters over 13 weeks with hands-on projects building autonomous navigation, object manipulation, visual recognition, and voice interaction systems."
+        />
+      </div>
+    </div>
+
+    <div style={{marginTop: '25px', fontSize: '0.9rem', opacity: '0.7'}}>
+      💬 <strong>AI Chatbot available in bottom-right corner</strong> • Ask anything about robotics!
+    </div>
+  </div>
+</div>
 
 <FeatureCards />
 

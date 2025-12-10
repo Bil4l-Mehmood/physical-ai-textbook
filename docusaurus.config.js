@@ -14,9 +14,9 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://Bil4l-Mehmood.github.io',
+  url: 'https://physical-ai-textbook.vercel.app',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  // For Vercel deployment, use root
   baseUrl: '/physical-ai-textbook/',
 
   // GitHub pages deployment config.

@@ -5,7 +5,28 @@ title: Physical AI & Humanoid Robotics Textbook
 description: A comprehensive AI-Native course for building intelligent robots with NVIDIA Jetson Orin Nano
 ---
 
+import SignupButton from '@site/src/components/Auth/SignupButton';
+import PersonalizeButton from '@site/src/components/PersonalizeButton';
+import TranslateButton from '@site/src/components/TranslateButton';
+
 # Welcome to the Physical AI & Humanoid Robotics Textbook
+
+:::tip 🚀 Get Started with Personalized Learning!
+Sign up to unlock personalized content, Urdu translation, and the AI chatbot assistant.
+:::
+
+<div style={{display: 'flex', justifyContent: 'center', margin: '30px 0'}}>
+  <SignupButton />
+</div>
+
+<PersonalizeButton chapterTitle="Physical AI & Humanoid Robotics Course" />
+
+<TranslateButton
+  chapterTitle="Physical AI & Humanoid Robotics Textbook"
+  content="This is a comprehensive, production-ready textbook for learning Physical AI and Humanoid Robotics on the NVIDIA Jetson Orin Nano. The course is designed for hands-on learning with ROS 2 middleware, NVIDIA Isaac Sim for simulation, and cutting-edge AI techniques including reinforcement learning and large language models. The textbook covers 4 chapters over 13 weeks: Chapter 1 teaches the robotic nervous system with ROS 2, Chapter 2 covers digital twin simulation with Isaac Sim, Chapter 3 integrates AI and perception with deep learning, and Chapter 4 adds vision-language-action capabilities for natural language robot control."
+/>
+
+---
 
 This is a comprehensive, production-ready textbook for learning **Physical AI and Humanoid Robotics** on the **NVIDIA Jetson Orin Nano**. The course is designed for hands-on learning with ROS 2 middleware, NVIDIA Isaac Sim for simulation, and cutting-edge AI techniques including reinforcement learning and large language models.
 
